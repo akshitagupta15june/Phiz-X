@@ -30,3 +30,9 @@ https://realpython.com/traditional-face-detection-python/
 Face Detection using OPenCV Python- video
 
 https://youtu.be/LopYA64KmdE
+
+Face Recognition using LBPH Algorithm
+
+article https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
+
+paper https://www.ijeat.org/wp-content/uploads/papers/v8i5S/E10060585S19.pdf
