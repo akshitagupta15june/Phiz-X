@@ -13,18 +13,16 @@ while cap.isOpened():
     img = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)
     detected_faces = face_cascade.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5)
     for (x, y, w, h) in detected_faces:
-        #cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 5)
+      
         roi_face = img[y:y+h, x:x+w]
         roi_gray = gray[y:y+h, x:x+w]
         eyes = cas.detectMultiScale(roi_gray, scaleFactor=1.5, minNeighbors=5)
         for (ex, ey, ew, eh) in eyes:
-            #cv2.rectangle(roi_face, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 5)
+            
             roi_eyes = roi_face[ey:ey+eh, x:x+w]
             glasses_re = cv2.resize(glasses, (int(w), eh), interpolation=cv2.INTER_CUBIC)
             gw, gh, gc = glasses_re.shape;
-            #print(ex,ey)
-            #print(glasses_re.shape)
-            #print(roi_face.shape)
+            
             for i in range(0, gw):
                 for j in range(0, gh):
                     if glasses_re[i, j][3] != 0:
@@ -32,13 +30,11 @@ while cap.isOpened():
 
         smile = smile_cas.detectMultiScale(roi_gray, scaleFactor=1.5, minNeighbors=5)
         for (sx, sy, sw, sh) in smile:
-            #cv2.rectangle(roi_face, (sx, sy), (sx+sw, sy+sh), (255, 0, 0), 2)
+         
             roi_smile = roi_face[sy:sy+sh, sx:sx+sw]
             cigar_re = cv2.resize(cigar, (int(sw/1.8), int(sh/1.5)), interpolation=cv2.INTER_CUBIC)
             cw, ch, cc = cigar_re.shape
-            #print(sx,sy)
-            #print(cigar_re.shape)
-            #print(roi_face.shape)
+         
             for i in range(0, cw):
                 for j in range(0, ch):
                     if cigar_re[i, j][3] != 0:
