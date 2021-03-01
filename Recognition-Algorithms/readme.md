@@ -1,6 +1,6 @@
-#Face Recognition using LBPH: Local Binary Patterns Histograms
+# Face Recognition using LBPH: Local Binary Patterns Histograms
 
-#Overview
+# Overview
 
 Local Binary Pattern (LBP) is a simple yet very efficient texture operator which labels the pixels of an image by thresholding the neighborhood of each pixel and considers the result as a binary number. Using the LBP combined with histograms we can represent the face images with a simple data vector. 
 
@@ -11,7 +11,7 @@ It has 4 main steps:
 3. Extracting the Histograms
 4. Performing the Face Recognition
 
-#Dependencies
+# Dependencies
 
 ```
 pip install numpy
@@ -19,12 +19,12 @@ pip install opencv-python
 pip install opencv-contrib-python
 ```
 
-#Collecting the Dataset 
+# Collecting the Dataset 
 
 In this project, I coded so that my Laptop's camera get 400 images of my faces in the dataCollection.py file.
 We also need to set an ID for each image, so the algorithm will use this information to recognize an input image and give us an output. 
 
-#Applying the LBP Operations
+# Applying the LBP Operations
 
 The first step is to create an intermediate image that describes the original image in a better way, by highlighting the facial characteristics.
 
@@ -38,14 +38,14 @@ To do so, the algorithm uses a concept of a sliding window, which works as follo
 
 At the end of this procedure, we have a new image which represents better the characteristics of the original image.
 
-#Extracting the Histograms
+# Extracting the Histograms
 
 We extract the histogram of each region as follows:
 
 1. As we have an image in grayscale, each histogram will contain only 256 positions representing the occurrences of each pixel intensity.
 2. Then, we concatenate each histogram to create a new and bigger histogram. The final histogram represents the characteristics of the image original image.
 
-#Performing the Face Recognition
+# Performing the Face Recognition
 
 Each histogram created is used to represent each image from the training dataset. So, given an input image, we perform the steps again for this new image and creates a histogram which represents the image.
 
