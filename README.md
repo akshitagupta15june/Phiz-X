@@ -7,7 +7,7 @@ Phiz (a person's face or expression.)
 Project Mentor [Akshita Gupta](https://github.com/akshitagupta15june)
 
 
-Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project demonstrates all kinds of algorithms and various operations that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
+Despite the availability of a variety of open source face recognition algorithms, there are no ready-made solutions which can be implemented directly. This project have demonstrated a kind of algorithm and an operation that can be implemented on a frontal face. The available algorithms process only high-resolution static shots and perform sufficiently well.
 
 
 ### Requirements 👇
