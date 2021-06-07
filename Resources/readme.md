@@ -1,5 +1,20 @@
 
+Watch this video to get started, if you have no clue about open source Github Bootcamp https://youtu.be/SYtPC9tHYyQ
 
+You can refer to the following articles on the basics of Git and Github.
+
+Forking a Repo https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo
+
+Cloning a Repo https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request
+
+How to create a Pull Request  https://opensource.com/article/19/7/create-pull-request-github
+
+Getting started with Git and GitHub https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6
+
+
+
+
+Github Bootcamp https://youtu.be/SYtPC9tHYyQ
 
 Github Guide https://youtu.be/iR5WIknxdkY
 
