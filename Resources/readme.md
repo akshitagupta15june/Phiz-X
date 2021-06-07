@@ -12,7 +12,7 @@ How to create a Pull Request  https://opensource.com/article/19/7/create-pull-re
 Getting started with Git and GitHub https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6
 
 
-
+..............................................................................................................................................................
 
 Github Bootcamp https://youtu.be/SYtPC9tHYyQ
 
